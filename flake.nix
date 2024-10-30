@@ -2,11 +2,9 @@
   description = "Flake to test PR's in CI";
 
   # Nixpkgs / NixOS version to use.
-  inputs.nixpkgs.url = "nixpkgs/nixos-21.11";
+  # inputs.nixpkgs.url = "nixpkgs/nixos-21.11";
   inputs = {
-
     dsluijk.url = "github:dsluijk/nixpkgs";
-
   };
 
   outputs =
@@ -35,7 +33,7 @@
 
           # Packages from specific forks/PR's
           orca-slicer = (nixpkgsForFork.${system} dsluijk).orca-slicer;
-          bambu-studio = (nixpkgsForFork.${system} dsluijk).bambu-studio;
+          # bambu-studio = (nixpkgsForFork.${system} dsluijk).bambu-studio;
         }
       );
 
