@@ -1,9 +1,8 @@
 labels:
   backend: local
+  platform: linux/arm64
 
-platform: "linux/arm64"
-
-pipeline:
+steps:
   - name: setup attic
     image: bash
     commands:
@@ -13,7 +12,7 @@ pipeline:
   - name: build orca-slicer
     image: bash
     commands:
-      - nix build --print-out-paths .\#orca-slicer
+      - nix build --print-out-paths -L .\#orca-slicer
 
   - name: push orca-slicer
     image: bash
