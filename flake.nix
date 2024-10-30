@@ -35,6 +35,7 @@
 
           # Packages from specific forks/PR's
           orca-slicer = (nixpkgsForFork.${system} dsluijk).orca-slicer;
+          bambu-studio = (nixpkgsForFork.${system} dsluijk).bambu-studio;
         }
       );
 

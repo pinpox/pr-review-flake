@@ -9,12 +9,12 @@ steps:
       - attic login lounge-rocks https://cache.lounge.rocks $ATTIC_KEY --set-default
     secrets: [attic_key]
 
-  - name: build orca-slicer
+  - name: build bambu-studio
     image: bash
     commands:
-      - nix build --print-out-paths -L .\#orca-slicer
+      - nix build --print-out-paths -L .\#bambu-studio
 
-  - name: push orca-slicer
+  - name: push bambu-studio
     image: bash
     commands:
       - attic push nix-cache result
