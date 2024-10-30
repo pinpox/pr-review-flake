@@ -1,0 +1,42 @@
+{
+  "nodes": {
+    "dsluijk": {
+      "locked": {
+        "lastModified": 1728909153,
+        "narHash": "sha256-A6VXmw94vdswzCAxYJ3Zh7e9TpO3bC0R19ZbNJjCVn4=",
+        "owner": "dsluijk",
+        "repo": "nixpkgs",
+        "rev": "4117c7f7b143d14de2f9dfbd86ed5e1936634dbb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dsluijk",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1659446231,
+        "narHash": "sha256-hekabNdTdgR/iLsgce5TGWmfIDZ86qjPhxDg/8TlzhE=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "eabc38219184cc3e04a974fe31857d8e0eac098d",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "ref": "nixos-21.11",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "dsluijk": "dsluijk",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
