@@ -15,7 +15,7 @@ pipeline:
     commands:
       - nix build --print-out-paths .\#orca-slicer
 
-  - name: push nixosConfigurations
+  - name: push orca-slicer
     image: bash
     commands:
       - attic push nix-cache result
